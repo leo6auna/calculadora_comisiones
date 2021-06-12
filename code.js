@@ -1,7 +1,6 @@
 
 function calculo(event){
-    alert('I´m working bitch!!')
-    // reset();
+    
     var ingreso = document.getElementById('ingreso').value;
     var debPrevio = document.getElementById('dbt-pre').value;
     var debFinal = document.getElementById('dbt-fin').value;
@@ -20,25 +19,14 @@ function calculo(event){
     quinceFinal = ingreso - quincePrevio;
     sixtyPrevio = ingreso * ((0*1.21)/100);
     sixtyFinal = ingreso - sixtyPrevio;
-    document.getElementById('dbt-pre').value = debPrevio.toFixed(3);
-    document.getElementById('dbt-fin').value = debFinal;
-    document.getElementById('cdt-0-pre').value = ceroPrevio;
-    document.getElementById('cdt-0-fin').value = ceroFinal;
-    document.getElementById('cdt-15-pre').value = quincePrevio;
-    document.getElementById('cdt-15-fin').value = quinceFinal;
-    document.getElementById('cdt-60-pre').value = sixtyPrevio;
-    document.getElementById('cdt-60-fin').value = sixtyFinal;
+    document.getElementById('dbt-pre').value = debPrevio.toFixed(2);
+    document.getElementById('dbt-fin').value = debFinal.toFixed(2);
+    document.getElementById('cdt-0-pre').value = ceroPrevio.toFixed(2);
+    document.getElementById('cdt-0-fin').value = ceroFinal.toFixed(2);
+    document.getElementById('cdt-15-pre').value = quincePrevio.toFixed(2);
+    document.getElementById('cdt-15-fin').value = quinceFinal.toFixed(2);
+    document.getElementById('cdt-60-pre').value = sixtyPrevio.toFixed(2);
+    document.getElementById('cdt-60-fin').value = sixtyFinal.toFixed(2);
 
 
-}
-
-function reset(){
-    document.getElementById('dbt-pre').value = none;
-    document.getElementById('dbt-fin').value = none;
-    document.getElementById('cdt-0-pre').value = none;
-    document.getElementById('cdt-0-fin').value = none;
-    document.getElementById('cdt-15-pre').value = none;
-    document.getElementById('cdt-15-fin').value = none;
-    document.getElementById('cdt-60-pre').value = none;
-    document.getElementById('cdt-60-fin').value = none;
 }
