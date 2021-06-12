@@ -20,7 +20,7 @@ function calculo(event){
     quinceFinal = ingreso - quincePrevio;
     sixtyPrevio = ingreso * ((0*1.21)/100);
     sixtyFinal = ingreso - sixtyPrevio;
-    document.getElementById('dbt-pre').value = debPrevio;
+    document.getElementById('dbt-pre').value = debPrevio.toFixed(3);
     document.getElementById('dbt-fin').value = debFinal;
     document.getElementById('cdt-0-pre').value = ceroPrevio;
     document.getElementById('cdt-0-fin').value = ceroFinal;
